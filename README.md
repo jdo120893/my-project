@@ -2,6 +2,7 @@
 
 멋쟁이사자처럼 백엔드 스쿨에서 공부하며 성장하고 있는 정동욱입니다.
 배운 내용을 잊지 않기 위해 꾸준히 기록하고 있습니다.
+현재 **jungo** 프로젝트, 현재 운영중인 중고 사이트 프로젝트 완성 추후 추가 예정
 
 ## 🛠 Tech Stack
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
