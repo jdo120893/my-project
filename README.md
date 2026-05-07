@@ -12,7 +12,9 @@
 <a href="https://instagram.com/정동욱" target="blank"><img align="center" /> <a href="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="정동욱" height="30" width="40" /></a>
 </p>
 
-## 언어 및 도구
-* **HAPPYJava**: 자바 기초 및 객체지향 실습 코드
-* **teacher-code**: 수업 시간 예제 및 과제 아카이브
-* **my-html-project**: HTML/CSS 프론트엔드 기초 실습
+### 🛠 언어 및 도구
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
