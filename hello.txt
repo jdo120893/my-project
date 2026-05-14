@@ -1,1 +1,2 @@
 Hello, Git!
+Feature 2의 변경 사항
