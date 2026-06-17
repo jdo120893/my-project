@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 node_modules/
 .m2/
 *.class
+=======
+.DS_store
+build
+>>>>>>> 62c7e023343b3b5b9692d6b4b687ae4494e541b8
