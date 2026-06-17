@@ -12,6 +12,8 @@
 ## 📁 Repository Structure
 * **HAPPYJava**: 자바 기초 및 객체지향 실습 코드
 * **my-html-project**: HTML/CSS 프론트엔드 기초 실습
+* **mini_peoject_notice_Board**: jpa 및HTML/CSS 프론트엔드 기초 실습
+* **Samsung_Project**: config 및 HTML/CSS 프론트엔드 기초 실습
 
 ---
 *꾸준함이 실력을 만든다!*
