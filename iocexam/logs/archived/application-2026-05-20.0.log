@@ -1,0 +1,36 @@
+2026-05-20 13:50:52.446 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Starting IocexamApplication using Java 21.0.10 with PID 14996 (C:\Users\user\lion\workspace\iocexam\out\production\classes started by user in C:\Users\user\lion\workspace\iocexam)
+2026-05-20 13:50:52.449 [restartedMain] DEBUG o.example.iocexam.IocexamApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 13:50:52.449 [restartedMain] INFO  o.example.iocexam.IocexamApplication - The following 1 profile is active: "prod"
+2026-05-20 13:50:52.484 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 13:50:52.863 [restartedMain] DEBUG o.e.iocexam.service.UserServiceImpl - UserServiceImpl debug level
+2026-05-20 13:50:52.863 [restartedMain] INFO  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() 생성자 호출!!
+2026-05-20 13:50:52.864 [restartedMain] WARN  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() warn logger!!
+2026-05-20 13:50:52.864 [restartedMain] ERROR o.e.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 13:50:52.947 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Started IocexamApplication in 1.154 seconds (process running for 1.74)
+2026-05-20 13:51:32.390 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Starting IocexamApplication using Java 21.0.10 with PID 3056 (C:\Users\user\lion\workspace\iocexam\out\production\classes started by user in C:\Users\user\lion\workspace\iocexam)
+2026-05-20 13:51:32.391 [restartedMain] DEBUG o.example.iocexam.IocexamApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 13:51:32.392 [restartedMain] INFO  o.example.iocexam.IocexamApplication - The following 1 profile is active: "prod"
+2026-05-20 13:51:32.427 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 13:51:32.831 [restartedMain] DEBUG o.e.iocexam.service.UserServiceImpl - UserServiceImpl debug level
+2026-05-20 13:51:32.831 [restartedMain] INFO  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() 생성자 호출!!
+2026-05-20 13:51:32.831 [restartedMain] WARN  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() warn logger!!
+2026-05-20 13:51:32.831 [restartedMain] ERROR o.e.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 13:51:32.915 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Started IocexamApplication in 1.032 seconds (process running for 1.678)
+2026-05-20 14:06:45.105 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Starting IocexamApplication using Java 21.0.10 with PID 7720 (C:\Users\user\lion\workspace\iocexam\out\production\classes started by user in C:\Users\user\lion\workspace\iocexam)
+2026-05-20 14:06:45.106 [restartedMain] DEBUG o.example.iocexam.IocexamApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 14:06:45.107 [restartedMain] INFO  o.example.iocexam.IocexamApplication - The following 1 profile is active: "prod"
+2026-05-20 14:06:45.142 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 14:06:45.503 [restartedMain] DEBUG o.e.iocexam.service.UserServiceImpl - UserServiceImpl debug level
+2026-05-20 14:06:45.503 [restartedMain] INFO  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() 생성자 호출!!
+2026-05-20 14:06:45.503 [restartedMain] WARN  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() warn logger!!
+2026-05-20 14:06:45.503 [restartedMain] ERROR o.e.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 14:06:45.572 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Started IocexamApplication in 0.962 seconds (process running for 1.526)
+2026-05-20 17:23:21.834 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Starting IocexamApplication using Java 21.0.10 with PID 11656 (C:\Users\user\lion\workspace\iocexam\out\production\classes started by user in C:\Users\user\lion\workspace\iocexam)
+2026-05-20 17:23:21.835 [restartedMain] DEBUG o.example.iocexam.IocexamApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-20 17:23:21.836 [restartedMain] INFO  o.example.iocexam.IocexamApplication - The following 1 profile is active: "prod"
+2026-05-20 17:23:21.873 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 17:23:22.289 [restartedMain] DEBUG o.e.iocexam.service.UserServiceImpl - UserServiceImpl debug level
+2026-05-20 17:23:22.289 [restartedMain] INFO  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() 생성자 호출!!
+2026-05-20 17:23:22.289 [restartedMain] WARN  o.e.iocexam.service.UserServiceImpl - UserServiceImpl() warn logger!!
+2026-05-20 17:23:22.289 [restartedMain] ERROR o.e.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 17:23:22.364 [restartedMain] INFO  o.example.iocexam.IocexamApplication - Started IocexamApplication in 1.139 seconds (process running for 1.825)

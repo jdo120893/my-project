@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: iocexam
+
+#  profiles:
+#    active: prod

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 실패</title>
+</head>
+<body>
+<h2 style="color: red;">회원가입 실패</h2>
+<p>이미 사용 중인 이름(또는 아이디)입니다. 다른 정보로 가입해 주세요.</p>
+<br>
+<a th:href="@{/user/register}">회원가입 화면으로 돌아가기</a>
+</body>
+</html>

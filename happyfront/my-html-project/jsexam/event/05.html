@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>event5</title>
+    </head>
+    <body>
+        <button>클릭</button>
+        <script>
+            
+            function changeColor(event){
+            const r = Math.round(Math.random() * 255);
+            const g = Math.round(Math.random() * 255);
+            const b = Math.round(Math.random() * 255);
+            
+
+          document.body.style.backgroundColor= `rgb(${r}, ${g}, ${b})`;
+
+          console.log(event.target);
+
+          document.removeEventListener("click", changeColor);
+            }
+
+            document.addEventListener("click", changeColor);
+
+            const hiEvent = (e) => {
+                alert("hello~~~");
+                e.target.removeEventListener("click", hiEvent);
+            };
+
+            document.querySelector("button").addEventListener("click", hiEvent);
+        </script>
+    </body>
+</html>

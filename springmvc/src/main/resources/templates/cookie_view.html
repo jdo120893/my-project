@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>쿠키보기</title>
+</head>
+<body>
+<h1>쿠키목록</h1>
+<ul>
+    <li th:each="cookie:${cookieList}">
+        <span th:text="${cookie}"></span>
+        <a gref="/cookieDel/"></a>
+    </li>
+</ul>
+
+<a herf="/cookieForm">쿠키등록</a>
+</body>
+</html>

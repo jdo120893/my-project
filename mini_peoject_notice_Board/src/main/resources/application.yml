@@ -1,0 +1,7 @@
+#spring.application.name=mini_peoject_notice_Board
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jdbcdb
+    username: mutsa
+    password: mutsapw

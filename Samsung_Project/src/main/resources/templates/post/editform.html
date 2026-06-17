@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 수정</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; max-width: 600px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ddd; border-radius: 4px; }
+        textarea { height: 250px; }
+        .btn-group { display: flex; gap: 10px; }
+        .btn { padding: 10px 15px; border: none; border-radius: 4px; color: white; cursor: pointer; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<h2>🛠️ 게시글 수정</h2>
+
+<form th:action="@{/posts/{id}/edit(id=${post.id})}" method="post">
+    <div class="form-group">
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" th:value="${post.title}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="content">내용</label>
+        <textarea id="content" name="content" th:text="${post.content}" required></textarea>
+    </div>
+
+    <div class="btn-group">
+        <button type="submit" class="btn" style="background-color: #2196F3;">수정 완료</button>
+        <a th:href="@{/posts/{id}(id=${post.id})}" class="btn" style="background-color: #777;">취소</a>
+    </div>
+</form>
+
+</body>
+</html>

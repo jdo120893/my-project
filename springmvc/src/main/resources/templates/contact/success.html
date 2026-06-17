@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>문의 완료</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .success-message {
+            color: green;
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .info-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: left;
+            background-color: #f9f9f9;
+        }
+
+        .info-box p {
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>문의 완료</h1>
+
+    <div class="success-message" th:text="${successMessage}">
+        문의가 접수되었습니다.
+    </div>
+
+    <div class="info-box">
+        <h3>접수 내용:</h3>
+        <p><strong>이름:</strong> <span th:text="${name}">홍길동</span></p>
+        <p><strong>이메일:</strong> <span th:text="${email}">email@example.com</span></p>
+        <p><strong>메세지:</strong></p>
+        <p th:text="${message}">문의 내용...</p>
+    </div>
+
+    <a th:href="@{/contact}" class="btn">다시 문의하기</a>
+</div>
+</body>
+</html>

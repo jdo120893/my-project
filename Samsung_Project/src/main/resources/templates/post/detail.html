@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 상세 보기</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; max-width: 800px; }
+        .post-container { border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .post-header { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+        .post-content { min-height: 200px; line-height: 1.6; white-space: pre-wrap; }
+        .btn-group { display: flex; gap: 10px; margin-bottom: 30px; }
+        .btn { padding: 8px 15px; text-decoration: none; border-radius: 4px; color: white; cursor: pointer; border: none; font-size: 14px; }
+        .btn-edit { background-color: #2196F3; }
+        .btn-delete { background-color: #f44336; }
+        .btn-list { background-color: #777; }
+        .comment-section { margin-top: 40px; border-top: 2px solid #333; padding-top: 20px; }
+        .comment-form textarea { width: 100%; height: 80px; padding: 10px; margin-bottom: 10px; box-sizing: border-box; }
+        .comment-list { margin-top: 20px; }
+        .comment-item { padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+    </style>
+</head>
+<body>
+
+<div class="post-container">
+    <div class="post-header">
+        <h2 th:text="${post.title}">게시글 제목</h2>
+        <small style="color: gray;">작성일: <span th:text="${post.postedDate}">2026-06-18</span></small>
+    </div>
+
+    <div class="post-content" th:text="${post.content}">
+        게시글 본문 내용이 여기에 들어갑니다.
+    </div>
+</div>
+
+<div class="btn-group">
+    <a th:href="@{/posts}" class="btn btn-list">목록으로</a>
+    <a th:href="@{/posts/{id}/edit(id=${post.id})}" class="btn btn-edit">수정</a>
+
+    <form th:action="@{/posts/{id}/delete(id=${post.id})}" method="post" onsubmit="return confirm('정말 삭제하시겠습니까?');">
+        <button type="submit" class="btn btn-delete">삭제</button>
+    </form>
+</div>
+
+<div class="comment-section">
+    <h3>댓글</h3>
+
+    <div class="comment-form">
+        <form th:action="@{/comments/new}" method="post">
+            <input type="hidden" name="postId" th:value="${post.id}">
+            <textarea name="content" placeholder="깨끗한 댓글을 작성해 주세요." required></textarea>
+            <button type="submit" class="btn" style="background-color: #333;">댓글 등록</button>
+        </form>
+    </div>
+
+    <div class="comment-list">
+        <div class="comment-item" th:each="comment : ${comments}">
+            <div>
+                <p th:text="${comment.content}" style="margin: 0 0 5px 0;">댓글 내용입니다.</p>
+            </div>
+            <form th:action="@{/comments/{id}/delete(id=${comment.id})}" method="post">
+                <input type="hidden" name="postId" th:value="${post.id}">
+                <button type="submit" style="background: none; border: none; color: red; cursor: pointer;">삭제</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

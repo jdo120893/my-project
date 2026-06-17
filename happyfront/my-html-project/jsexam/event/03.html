@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>event</title>
+    </head>
+    <body>
+        <h2 id="number">7</h2>
+        <div><button id="increase">+1</button><button id="decrease">-1</button></div>
+
+        <script>
+            // document.getElementById("number").innerText = 0;
+           const number = document.getElementById("number");
+
+           document.getElementById("increase").addEventListener("click", () => {
+            // console.log(number.innerText++);
+            number.innerText++;
+           });
+
+           document.getElementById("decrease").addEventListener("click", () => {
+            // console.log(number.innerText++);
+            number.innerText--;
+           });
+        </script>
+    </body>
+</html>

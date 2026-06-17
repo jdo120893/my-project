@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: iocexam
+
+  profiles:
+    active: prod
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+    org.example: debug

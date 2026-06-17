@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>삭제 폼</title>
+    <link rel="stylesheet" th:href="@{/css/register.css}">
+</head>
+<body>
+<div class="wrap">
+    <div class="register-box">
+<h1>삭제 폼</h1>
+
+<form th:action="@{/delete/{id}(id=${boards.id})}" method="post">
+    <div class="input-box">
+    <lable type="hidden" name="id" th:value="${boards.id}"></lable>
+    <p th:text="${boards.title}"></p>
+    </div>
+    <div class="input-box">
+    <input type="password" name="password" placeholder="암호 입력"><br>
+    <p th:if="${error}" th:text="${error}" style="color:red"></p>
+    </div>
+    <button type="submit">삭제</button>
+    <a href="/list">취소</a>
+</form>
+    </div>
+</div>
+</body>
+</html>

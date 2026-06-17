@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>새 글 쓰기</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; max-width: 600px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], textarea { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ddd; border-radius: 4px; }
+        textarea { height: 250px; }
+        .btn-group { display: flex; gap: 10px; }
+        .btn { padding: 10px 15px; border: none; border-radius: 4px; color: white; cursor: pointer; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<h2>✍️ 새 글 작성</h2>
+
+<form th:action="@{/posts/new}" method="post">
+    <div class="form-group">
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+    </div>
+
+    <div class="form-group">
+        <label for="content">내용</label>
+        <textarea id="content" name="content" placeholder="내용을 입력하세요" required></textarea>
+    </div>
+
+    <div class="btn-group">
+        <button type="submit" class="btn" style="background-color: #4CAF50;">등록</button>
+        <a th:href="@{/posts}" class="btn" style="background-color: #777;">취소</a>
+    </div>
+</form>
+
+</body>
+</html>

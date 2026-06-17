@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: junggo_project
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jpajb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: mutsa
+    password: mutsapw

@@ -1,0 +1,4 @@
+2026-05-20 13:50:52.864 [restartedMain] ERROR org.example.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 13:51:32.831 [restartedMain] ERROR org.example.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 14:06:45.503 [restartedMain] ERROR org.example.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!
+2026-05-20 17:23:22.289 [restartedMain] ERROR org.example.iocexam.service.UserServiceImpl - UserServiceImpl() error logger!!

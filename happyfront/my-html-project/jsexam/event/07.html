@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>event exam</title>
+    </head>
+    <body>
+        <form action="06.html" id="joinForm">
+            이름 : <input type="text" name="name" > <br>
+            비밀번호 : <input type="password" name="password" ><br>
+            비밀번호 확인 : <input type="password" name="checkPassword" ><br>
+            <input type="submit" value="등록" />
+        </form>
+
+        <script>
+         const join = document.getElementById('joinForm');
+         join.addEventListener("submit", (e) => {
+            const [id, pw, chpw] = document.querySelectorAll("input");
+
+            if(id.value === ""){
+                alert("아이디는 반드시 입력 해야합니다.");
+                id.focus();
+            } else{
+                alert("회원가입성공!!");
+                return;
+            }
+
+                e.preventDefault();
+                return;
+         });
+
+        </script>
+
+       
+    </body>
+</html>

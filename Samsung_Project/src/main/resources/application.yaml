@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: Samsung_Project
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jpadb
+    username: mutsa
+    password: mutsapw
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+server:
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 5

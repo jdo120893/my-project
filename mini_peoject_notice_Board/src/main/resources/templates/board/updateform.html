@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>업데이트 폼</title>
+    <link rel="stylesheet" th:href="@{/css/register.css}">
+</head>
+<body>
+    <div class="wrap">
+        <div class="register-box">
+<h1>업데이트 폼</h1>
+    <p th:if="${error}" th:text="${error}" style="color:red"></p>
+
+    <form th:action="@{/update/{id}(id=${boards.id})}" method="post"
+          th:object="${boards}">
+        <div class="input-box">
+            <p>이름</p>
+        <input th:field="*{name}"/>
+        </div>
+        <div class="input-box">
+            <p>제목</p>
+        <input th:field="*{title}"/>
+        </div>
+        <div class="input-box">
+            <p>내용</p>
+        <input th:field="*{content}"/>
+        </div>
+        <div class="input-box">
+            <p>비밀번호</p>
+        <input type="password" name="password" placeholder="암호">
+        </div>
+        <button type="submit">수정</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

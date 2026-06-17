@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>event exam</title>
+    </head>
+    <body>
+        <h1>todo List</h1>>
+
+        <ul id="todo-list">
+            <li>할일1</li>
+            <li>할일2</li>
+            <li>할일3</li>
+            <li>할일4</li>
+            <li>할일5</li>
+        </ul>
+
+        <label for="todo"> 할일을 입력하세요. </label>
+        <input type="text" id="todo-value">
+        <button id="todo-btn">할일 입력</button>
+
+        <script>
+            const ul = document.getElementById("todo-list");
+
+            const join = document.getElementById('todo-btn').addEventListener("click", () => {
+                const todo = document.getElementById("todo-value").value;
+                
+                
+
+                const li = document.createElement("li");
+                const text = document.createTextNode(todo);
+                li.appendChild(text);
+                ul.appendChild(li);
+
+                document.getElementById("todo-value").value = "";
+            });
+
+            ul.addEventListener("click", (e) => {
+                alert(e.target.innerText);
+            });
+
+
+        </script>
+
+
+       
+    </body>
+</html>

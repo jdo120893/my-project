@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>카운터 표시</title>
+    <style>
+        .counter-box{
+            text-align: center;
+            margin: 100px auto;
+            padding: 50px;
+            border: 10px solid #007bff;
+            border-radius: 50px;
+            width: 400px;
+        }
+        .count { font-size: 64px; color: #007bff; font-weight: bold; }
+        .btn {
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<!--    <div class="counter-box">-->
+    <h1>카운터</h1>
+    <p>당신은 이 페이지를 <span th:text="${visitCount}"></span>번 사용했습니다.</p>
+<!--    <div class="count" th:text="${visitCount}">0</div>-->
+<!--    <p>번 방문했습니다.</p>-->
+<!--    <a th:href="@{/counter/reset}" class="btn">초기화</a>-->
+<!--    </div>-->
+</body>
+</html>

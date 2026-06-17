@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>event 2</title>
+    </head>
+    <body>
+        <button id="btn">클릭</button>
+        <script>
+            // event
+            //소스(대상(html tag)) - 이벤트리스너
+            // 소스
+            const btn = document.getElementById("btn");
+
+            btn.addEventListener("mouseover", hi);
+
+            function hi(){
+                // alert("hello");
+                console.log("hello")
+            }
+            btn.addEventListener("click", () => alert("hi!!!"));
+        </script>
+    </body>
+</html>

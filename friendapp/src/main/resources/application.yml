@@ -1,0 +1,7 @@
+#spring.application.name=friendapp
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jdbcdb
+    username: mutsa
+    password: mutsapw
