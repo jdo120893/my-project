@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: todoDB_Swagger_Project
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/caramidb
+    username: carami
+    password: caramipw
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

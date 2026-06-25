@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: securityexam
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/caramidb
+    username: carami
+    password: caramipw
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
+            scope:
+              - read:user
+              - user:email
+
+
+jwt:
+  secretKey: aPQbsKV7CZZDls/cnhW1EjqlGux45LAbBYpBhyk7nAk=
+  refreshKey: 123456789010123456789023u454954958495w43434
+  access-expiration-ms: 10000
+  refresh-expiration-ms: 604800000
+
+#  security:
+#    user:
+#      name: carami
+#      password: 1234
+
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+
+
+server:
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 5

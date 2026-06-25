@@ -65,7 +65,7 @@ public class PostController {
             @RequestParam(defaultValue = "10") int size,
             Model model) {
 
-        PageRequest pageRequest = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "postedDate"));
+        PageRequest pageRequest = PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "postedDate"));
         Page<Post> postPage = postService.getPosts(pageRequest);
 
         // 타임리프 화면에서 사용할 데이터 전달
@@ -100,7 +100,7 @@ public class PostController {
             @RequestParam(defaultValue = "10") int size,
             Model model) {
 
-        PageRequest pageRequest = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "postedDate"));
+        PageRequest pageRequest = PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "postedDate"));
         Page<Post> searchResults = postService.searchPosts(keyword, pageRequest);
 
         model.addAttribute("posts", searchResults.getContent());

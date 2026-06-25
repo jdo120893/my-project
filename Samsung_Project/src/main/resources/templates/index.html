@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>홈</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        h1 { font-size: 24px; margin-bottom: 10px; color: #333; }
+        p  { font-size: 14px; color: #777; margin-bottom: 30px; }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+
+        .btn-primary { background-color: #007bff; }
+        .btn-primary:hover { background-color: #0056b3; }
+        .btn-secondary { background-color: #6c757d; }
+        .btn-secondary:hover { background-color: #545b62; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>📝 회사 게시판</h1>
+    <p>로그인 후 게시판을 이용하실 수 있습니다.</p>
+
+    <a th:href="@{/user/loginform}" class="btn btn-primary">로그인</a>
+    <a th:href="@{/user/register}" class="btn btn-secondary">회원가입</a>
+    <a th:href="@{/posts}" class="btn btn-primary">게시판 바로가기</a>
+</div>
+
+</body>
+</html>

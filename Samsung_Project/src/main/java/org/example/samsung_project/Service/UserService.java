@@ -40,6 +40,12 @@ public class UserService {
         userRepository.delete(user);
     }
 
+    @Transactional
+    public User findByLoginId(String loginId) {
+        return userRepository.findByLoginId(loginId)
+                .orElseThrow(() -> new RuntimeException("유저를 찾을 수 없습니다."));
+    }
+
     public boolean isLoginIdTaken(String loginId){
         return userRepository.existsByLoginId(loginId);
     }

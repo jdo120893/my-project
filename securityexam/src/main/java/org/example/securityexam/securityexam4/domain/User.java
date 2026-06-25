@@ -3,7 +3,6 @@ package org.example.securityexam.securityexam4.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.boot.context.properties.bind.Name;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;

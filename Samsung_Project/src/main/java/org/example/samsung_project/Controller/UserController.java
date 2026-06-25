@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.samsung_project.domain.User;
 import org.example.samsung_project.dto.UserDto;
 import org.example.samsung_project.Service.UserService;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -43,16 +45,13 @@ public class UserController { // 클래스 이름은 깔끔하게 UserController
 
     // 마이페이지 화면 보여주기
     @GetMapping("/myinfo")
-    public String myinfo(HttpSession session, Model model) {
-        // 1. 세션에서 현재 로그인한 유저 정보를 꺼내옵니다. (로그인 시점에 세션에 "loginUser"로 저장했다고 가정)
-        User loginUser = (User) session.getAttribute("loginUser");
-
-        // 만약 로그인 안 된 상태로 접근하면 로그인 페이지로 튕겨내기
-        if (loginUser == null) {
+    public String myinfo(@AuthenticationPrincipal UserDetails userDetails, Model model) {
+        if (userDetails == null) {
             return "redirect:/user/loginform";
         }
 
-        // 2. HTML에서 ${user}로 사용할 수 있도록 Model에 담아서 보냅니다.
+        // loginId(username)로 DB에서 유저 조회
+        User loginUser = userService.findByLoginId(userDetails.getUsername());
         model.addAttribute("user", loginUser);
 
         return "/user/myinfo";

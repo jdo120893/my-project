@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<h2>📝 회사 게시판</h2>
+<h2>📝 게시판</h2>
 
 <div class="search-container">
     <form th:action="@{/posts/search}" method="get">
@@ -42,12 +42,12 @@
     <tr th:if="${#lists.isEmpty(posts)}">
         <td colspan="3" style="text-align: center;">등록된 게시글이 없습니다.</td>
     </tr>
-    <tr th:each="post : ${posts}">
-        <td th:text="${post.id}">1</td>
+    <tr th:each="post, iterStat : ${posts}">
+        <td th:text="${pageInfo.totalElements - (pageInfo.number * pageInfo.size) - iterStat.index}">1</td>
         <td>
             <a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}" style="color: #333; text-decoration: none; font-weight: bold;">제목입니다</a>
         </td>
-        <td th:text="${post.postedDate.toLocalDate()}">2026-06-18</td>
+        <td th:text="${post.postedDate != null ? post.postedDate.toLocalDate() : '-'}">2026-06-18</td>
     </tr>
     </tbody>
 </table>
